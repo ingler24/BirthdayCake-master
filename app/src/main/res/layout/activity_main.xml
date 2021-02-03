@@ -16,28 +16,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Happy Birthday"
-            android:textSize="60dp"
-            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20dp"
+            android:textColor="#DF7D05"
             />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <!--        CakeView is a custom SurfaceView that is defined in the app's source code -->
-            <cs301.birthdaycake.CakeView
-                android:id="@+id/cakeview"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-        </LinearLayout>
-
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <!--        CakeView is a custom SurfaceView that is defined in the app's source code -->
+        <cs301.birthdaycake.CakeView
+            android:id="@+id/cakeview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
@@ -46,6 +45,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="HOORAY!!" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:switchMinWidth="20dp"
+            android:text="Frosting" />
 
         <Button
             android:id="@+id/button2"
